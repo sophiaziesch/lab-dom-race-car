@@ -25,7 +25,7 @@ class Obstacle {
 	}
 
 	updatePosition() {
-		this.element.style.left = `${this.left}`;
-		this.element.style.top = `${this.top}`;
+		this.element.style.left = `${this.left}px`;
+		this.element.style.top = `${this.top}px`;
 	}
 }
