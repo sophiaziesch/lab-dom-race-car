@@ -33,7 +33,7 @@ class Game {
 		if (this.isGameOver) {
 			this.endGame();
 		} else {
-			this.animatedId = requestAnimationFrame(() => this.gameLoop());
+			this.animateId = requestAnimationFrame(() => this.gameLoop());
 		}
 	}
 

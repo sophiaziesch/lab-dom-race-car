@@ -2,7 +2,7 @@ class Player {
 	constructor(gameScreen) {
 		this.gameScreen = gameScreen;
 		this.left = 180;
-		this.top = 4800;
+		this.top = 480;
 		this.width = 80;
 		this.height = 150;
 		this.directionX = 0;
@@ -46,7 +46,7 @@ class Player {
 		this.element.style.top = `${this.top}px`;
 	}
 
-	didCollide() {
+	didCollide(obstacle) {
 		const playerRect = this.element.getBoundingClientRect();
 		const obstacleRect = obstacle.element.getBoundingClientRect();
 

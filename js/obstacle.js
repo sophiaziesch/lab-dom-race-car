@@ -21,6 +21,10 @@ class Obstacle {
 
 	move() {
 		this.top += 3;
+		if (this.top > this.gameScreen.offsetHeight) {
+			this.element.remove();
+			return true; // return true when obstacle goes below the game screen
+		}
 		this.updatePosition();
 	}
 

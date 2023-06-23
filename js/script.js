@@ -3,14 +3,6 @@ window.addEventListener("load", () => {
 	const restartButton = document.getElementById("restart-button");
 	let game;
 
-	startButton.addEventListener("click", function () {
-		startGame();
-	});
-
-	restartButton.addEventListener("click", () => {
-		location.reload();
-	});
-
 	function startGame() {
 		console.log("start game");
 		game = new Game();
@@ -55,4 +47,11 @@ window.addEventListener("load", () => {
 			}
 		});
 	}
+	startButton.addEventListener("click", function () {
+		startGame();
+	});
+
+	restartButton.addEventListener("click", () => {
+		location.reload();
+	});
 });
